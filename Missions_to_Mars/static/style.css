@@ -1,0 +1,54 @@
+h3 {
+    font-weight: bolder;
+    
+}
+
+.img-thumbnail {
+    padding: 0px;
+    background-color: #fff;
+    border-radius: 0px;
+    max-width: 100%;
+    height: auto;
+    border-collapse:collapse;
+    border:0;
+}
+
+.title {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bolder; 
+    padding-top: 25px; 
+    text-align: center;
+    font-size: 25px;
+  }
+
+  @media (max-width: 758px) 
+  {
+      #block-1 img
+      {
+      height:35vh;
+      width: 55vw;
+      }
+      #block-2 img
+      {
+      height:35vh;
+      width: 55vw;
+      }
+      #block-3 img
+      {
+      height:35vh;
+      width: 55vw;
+      }
+      #block-4 img
+      {
+      height:35vh;
+      width: 55vw;
+      }
+
+      .title {
+        font-family: 'Times New Roman', Times, serif;
+        font-weight: bolder; 
+        padding-top: 25px; 
+        text-align: left;
+        font-size: 20px;
+      }
+  }
