@@ -39,23 +39,12 @@
     </div>
     <div class="row">
       <div class="title">Mars Hemispheres</div>
+      {% for hemisphere in MarsData.hemisphere_image_urls %}
       <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="block-1">
-        <div class="title">{{MarsData.hemisphere_image_urls[0].title}}</div>
-        <img src={{MarsData.hemisphere_image_urls[0].img_url}} width="100%"  alt="Mars_Hemisphere1">
+        <div class="title">{{hemisphere.title}}</div>
+        <img src={{hemisphere.img_url}} width="100%"  alt="Mars_Hemisphere1">
       </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="block-2">
-        <div class="title">{{MarsData.hemisphere_image_urls[1].title}}</div>
-        <img src={{MarsData.hemisphere_image_urls[1].img_url}} width="100%" alt="Mars_Hemisphere2">
-      </div>
-      </br>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="block-3">
-        <div class="title">{{MarsData.hemisphere_image_urls[2].title}}</div>
-        <img src={{MarsData.hemisphere_image_urls[2].img_url}} width="100%"  alt="Mars_Hemisphere3">
-      </div>
-      <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12" id="block-4">
-        <div class="title">{{MarsData.hemisphere_image_urls[3].title}}</div>
-        <img src={{MarsData.hemisphere_image_urls[3].img_url}} width="100%"  alt="Mars_Hemisphere4">
-      </div>
+      {% endfor %}
     </div>
   </div>
   
